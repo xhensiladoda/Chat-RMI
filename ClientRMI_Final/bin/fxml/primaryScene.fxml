@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="content" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="475.0" style="-fx-background-color: #ADD8E3;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="primarySceneController">
+  <children>
+    <GridPane AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" hgap="5.0" layoutX="0.0" layoutY="0.0" vgap="5.0">
+      <children>
+        <Label alignment="CENTER_RIGHT" prefWidth="200.5" text="Username:" GridPane.columnIndex="0" GridPane.hgrow="NEVER" GridPane.rowIndex="4" GridPane.vgrow="NEVER">
+          <font>
+            <Font name="Tahoma" size="14.0" fx:id="x1" />
+          </font>
+          <labelFor>
+            <TextField fx:id="username" alignment="CENTER_LEFT" prefWidth="100.0" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="4" GridPane.vgrow="NEVER" />
+          </labelFor>
+        </Label>
+        <fx:reference source="username" />
+        <Label alignment="CENTER_RIGHT" font="$x1" prefWidth="200.5" text="Password:" GridPane.columnIndex="0" GridPane.hgrow="NEVER" GridPane.rowIndex="5" GridPane.vgrow="NEVER">
+          <labelFor>
+            <PasswordField fx:id="password" alignment="CENTER_LEFT" prefWidth="200.0" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="5" GridPane.vgrow="NEVER" />
+          </labelFor>
+        </Label>
+        <fx:reference source="password" />
+        <Button fx:id="signin" alignment="CENTER_RIGHT" cancelButton="false" contentDisplay="LEFT" defaultButton="false" mnemonicParsing="false"  text="Sign In" textFill="BLACK" textOverrun="ELLIPSIS" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="NEVER" GridPane.rowIndex="6" GridPane.valignment="BOTTOM" />
+        <Hyperlink fx:id="registration" onAction="#registration" text="Registrazione" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="7" GridPane.valignment="TOP" />
+        <Text fx:id="actiontarget" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+        <Label alignment="CENTER" contentDisplay="RIGHT" prefHeight="38.0" prefWidth="475.0" text="Welcome to ChatRMI" GridPane.columnIndex="0" GridPane.columnSpan="3" GridPane.rowIndex="3" GridPane.rowSpan="1">
+          <font>
+            <Font name="Tahoma" size="20.0" />
+          </font>
+        </Label>
+        <Label fx:id="messagelbl" alignment="CENTER_LEFT" contentDisplay="TOP" minHeight="22.0" prefHeight="22.0" prefWidth="394.0" text="" textFill="RED" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.rowSpan="1" GridPane.valignment="TOP">
+          <font>
+            <Font name="Tahoma" size="12.0" />
+          </font>
+        </Label>
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="25.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+  </children>
+</AnchorPane>

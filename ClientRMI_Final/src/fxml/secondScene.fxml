@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color:#ADD8E3;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="secondSceneController">
+  <children>
+    <BorderPane id="BorderPane" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <center>
+        <BorderPane prefHeight="538.0" prefWidth="103.0">
+          <center>
+            <TabPane fx:id="tabpane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color:#F7F7F7;" tabClosingPolicy="ALL_TABS" />
+          </center>
+          <left>
+            <BorderPane prefHeight="544.0" prefWidth="150.0">
+              <center>
+                <ListView fx:id="viewamici" editable="false" opacity="1.0" prefHeight="200.0" prefWidth="400.0" />
+              </center>
+              <top>
+                <HBox id="hbox" prefHeight="24.0" prefWidth="102.0">
+                  <children>
+                    <Button fx:id="buttonAmicizia" minWidth="30.0" mnemonicParsing="false" prefWidth="30.0" text="" />
+                    <Label alignment="CENTER" prefHeight="24.0" prefWidth="58.0" text="Contatti" textFill="#003d99">
+                      <font>
+                        <Font name="Tahoma" size="12.0" />
+                      </font>
+                    </Label>
+                  </children>
+                </HBox>
+              </top>
+            </BorderPane>
+          </left>
+          <top>
+            <ToolBar id="toolbar" prefWidth="312.0">
+              <items>
+                <TextField fx:id="search" prefWidth="200.0" text="" />
+                <Button fx:id="buttonSearch" minWidth="21.999900000002526" mnemonicParsing="false" onAction="#ricerca" prefWidth="30.0" text="Cerca" />
+                <Button fx:id="buttonAmicizia2" minWidth="30.0" mnemonicParsing="false" onAction="#tabNuoveAmicizie" prefWidth="30.0" style="-fx-background-color:#1F4189;" text="5" textFill="WHITE" />
+                
+                <HBox alignment="CENTER_RIGHT" prefHeight="24.0" prefWidth="332.0">
+                  <children>
+                    <Label fx:id="labelUser" alignment="CENTER_RIGHT" prefWidth="180.0" text="" textAlignment="RIGHT" />
+                    <Button fx:id="buttonEsci" minWidth="22.0" mnemonicParsing="false" onAction="#logout" prefWidth="30.0" text="Esci">
+                      <HBox.margin>
+                        <Insets left="5.0" />
+                      </HBox.margin>
+                    </Button>
+                  </children>
+                </HBox>
+              </items>
+            </ToolBar>
+          </top>
+        </BorderPane>
+      </center>
+      <top>
+        <MenuBar>
+          <menus>
+            <Menu mnemonicParsing="false" text="File">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#openMioProfilo" text="Mio Profilo" fx:id="mioprofilo" />
+                <MenuItem mnemonicParsing="false" onAction="#openBacheca" text="Apri bacheca" fx:id="apribacheca" />
+                <MenuItem mnemonicParsing="false" onAction="#logout" text="Esci" fx:id="esci" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#openAbout" text="About" fx:id="about" />
+              </items>
+            </Menu>
+          </menus>
+        </MenuBar>
+      </top>
+    </BorderPane>
+  </children>
+</AnchorPane>

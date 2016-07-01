@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="546.0" prefWidth="380.0000999999975" style="-fx-background-color:#F7F7F7;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="tabCercaController">
+   <center>
+    <BorderPane prefHeight="200.0" prefWidth="200.0">
+      <center>
+        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="505.0" prefWidth="421.0">
+          <children>
+           <ListView fx:id="table" id="table" editable="false" opacity="1.0" prefHeight="200.0" prefWidth="400.0"
+           AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"/>
+          </children>
+        </AnchorPane>
+      </center>
+      <top>
+        <Label fx:id="lblSearch" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="22.000091552734375" prefWidth="370.0" style="-fx-background-color:#F7F7F7;" 
+        text="" textAlignment="LEFT" textFill="#606060" BorderPane.alignment="BOTTOM_LEFT">
+          <font>
+            <Font name="Tahoma" size="12.0" />
+          </font>
+          <BorderPane.margin>
+            <Insets right="15.0" />
+          </BorderPane.margin>
+        </Label>
+      </top>
+    </BorderPane>
+  </center>
+</BorderPane>
+
+
+
+
